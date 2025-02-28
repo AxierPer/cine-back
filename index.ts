@@ -20,10 +20,24 @@ serve({
       "GET, POST, PUT, DELETE, OPTIONS",
     );
 
-    // Mostrar los datos del Json
+    // Mostrar asientos
     if (req.method === "GET" && url.pathname === "/data") {
       const data = await readJson();
-      return new Response(JSON.stringify(data), {
+      const urlParams = new URL(req.url);
+      const movieId = urlParams.searchParams.get("id"); // Obtener el ID de la película desde los parámetros
+    
+      let response;
+    
+      if (movieId) {
+        // Buscar la película por ID dentro del array
+        const movie = data.movies?.find((m: any) => m.id === movieId);
+        response = movie ? movie.seats : [];
+      } else {
+        // Si no se especifica ID, devolver todas las películas
+        response = data.movies || [];
+      }
+
+      return new Response(JSON.stringify(response), {
         headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "*",
@@ -32,32 +46,44 @@ serve({
       });
     }
 
-    // Agregar datos al Json
+    // Agregar Asientos
     if (req.method === "POST" && url.pathname === "/add-libre") {
       const body = await req.json();
 
-      if (!Array.isArray(body)) {
-        return new Response(JSON.stringify({ message: "Formato incorrecto, se esperaba un array" }), {
+      if (!Array.isArray(body.seats) || typeof body.movieName !== "string") {
+        return new Response(JSON.stringify({ message: "Formato incorrecto, se esperaba un nombre de película y un array de asientos" }), {
           headers: { "Content-Type": "application/json" },
           status: 400,
         });
       }
-
+    
+      const { movieName, seats } = body;
+    
       let data = await readJson();
-
-      // Crear un objeto donde la clave es el ID para evitar duplicados
-      const seatsMap = data.seats.reduce((acc: any, seat: any) => {
-        acc[seat.id] = seat; // Guardar asiento existente
+    
+      // Si no existe la película en el JSON, se crea
+      if (!data.movies) {
+        data.movies = {}; // Se asegura de que haya una estructura de películas
+      }
+    
+      if (!data.movies[movieName]) {
+        data.movies[movieName] = { seats: [] };
+      }
+    
+      // Mapa de asientos existentes para evitar duplicados
+      const seatsMap = data.movies[movieName].seats.reduce((acc: any, seat: any) => {
+        acc[seat.id] = seat;
         return acc;
       }, {});
-
-      // Sobrescribir los existentes y agregar los nuevos
-      body.forEach((seat) => {
-        seatsMap[seat.id] = seat; // Si ya existe, lo actualiza; si no, lo agrega
+    
+      // Agregar o actualizar los asientos
+      seats.forEach((seat:any) => {
+        seatsMap[seat.id] = seat;
       });
-      
-      data.seats = Object.values(seatsMap);
-
+    
+      // Guardar la nueva lista de asientos para la película
+      data.movies[movieName].seats = Object.values(seatsMap);
+    
       await writeJson(data);
       
       return new Response(
@@ -72,38 +98,117 @@ serve({
       );
     }
 
-    // Actualizar datos al Json
+    // Actualizar Asientos
     if (req.method === "POST" && url.pathname === "/update-data") {
       const body = await req.json();
 
-      let data = await readJson();
-
-      const seat = data.seats.find((s: any) => s.id === body.id);
-      if (seat) {
-        seat.status = body.status; // Modificar solo el campo necesario
-        await writeJson(data);
+      if (!body.id || !Array.isArray(body.seats)) {
         return new Response(
-          JSON.stringify({ message: "Datos actualizados correctamente", data }),
+          JSON.stringify({ message: "Formato incorrecto, se esperaba un movieId y un array de asientos" }),
           {
-            headers: {
+            headers: { 
               "Content-Type": "application/json",
               "Access-Control-Allow-Origin": "*",
               "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
             },
-          },
-        );
-      } else {
-        return new Response(
-          JSON.stringify({ message: "Asiento no encontrado" }),
-          {
-            headers: {
-              "Content-Type": "application/json",
-              "Access-Control-Allow-Origin": "*",
-              "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-            },
-          },
+            status: 400,
+          }
         );
       }
+
+      let data = await readJson();
+       // Buscar la película por ID dentro del array
+      const movie = data.movies?.find((m: any) => m.id === body.id);
+
+      if (!movie) {
+        return new Response(
+          JSON.stringify({ message: "Película no encontrada" }),
+          {
+            headers: { 
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+            },
+            status: 404,
+          }
+        );
+      }
+
+       // Crear un objeto donde la clave es el ID del asiento para evitar duplicados
+      const seatsMap = movie.seats.reduce((acc: any, seat: any) => {
+        acc[seat.id] = seat; // Guardar asiento existente
+        return acc;
+      }, {});
+
+      // Sobrescribir los existentes y agregar los nuevos
+      body.seats.forEach((seat:any) => {
+        seatsMap[seat.id] = seat; // Si ya existe, lo actualiza; si no, lo agrega
+      });
+      
+      movie.seats = Object.values(seatsMap);
+
+      await writeJson(data);
+
+      return new Response(
+        JSON.stringify({ message: "Asiento agregado", data }),
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+          },
+        },
+      );
+    }
+
+    // Mostrar peliculas
+    if (req.method === "GET" && url.pathname === "/peliculas") {
+      const data = await readJson();
+      return new Response(JSON.stringify(data.movies), {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        },
+      });
+    }
+
+    // Agregar Peliculas
+    if (req.method === "POST" && url.pathname === "/add-pelicula") {
+      const body = await req.json();
+      let data = await readJson();
+      console.log(body);
+      
+      if (!body.id || !body.title || !body.genre) {
+        return new Response(JSON.stringify({ message: "Datos incompletos" }), {
+          headers: { "Content-Type": "application/json" },
+          status: 400,
+        });
+      }
+
+      // Verificar si la película ya existe
+      const existingMovieIndex = data.movies.findIndex((movie: any) => movie.id === body.id);
+
+      if (existingMovieIndex !== -1) {
+        // Actualizar película existente
+        data.movies[existingMovieIndex] = body;
+      } else {
+        // Agregar nueva película
+        data.movies.push(body);
+      }
+
+      await writeJson(data);
+      
+      return new Response(
+        JSON.stringify({ message: "Pelicula agregado", data }),
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+          },
+        },
+      );
     }
 
     return new Response("Ruta no encontrada", { status: 404 });
