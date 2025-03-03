@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "name": "Sebas",
+      "movie": {
+        "id": "2",
+        "title": "Señor de los anillos",
+        "description": "Peli para gente friki",
+        "schedule": "03-26-2025 16:00",
+        "price": 20,
+        "sala": 2
+      },
+      "seats": [
+        {
+          "id": 20,
+          "seat": "C - 1",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 22,
+          "seat": "C - 3",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 24,
+          "seat": "C - 5",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 26,
+          "seat": "C - 7",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 21,
+          "seat": "C - 2",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 23,
+          "seat": "C - 4",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 25,
+          "seat": "C - 6",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 27,
+          "seat": "C - 8",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 28,
+          "seat": "C - 9",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 29,
+          "seat": "C - 10",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        }
+      ]
+    }
+  ]
+}

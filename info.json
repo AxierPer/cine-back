@@ -1,1144 +1,676 @@
 {
   "movies": [
     {
-      "id": "0",
-      "title": "The Shawshank Redemption",
-      "genre": "Drama",
-      "duration": "2h 22min",
-      "description": "Two imprisoned",
-      "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg",
-      "sala": "1",
-      "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
-      "schedule": "2021-10-10 15:00:00",
-      "price": "10",
-      "seats": [
-        {
-          "id": 0,
-          "seat": "A - 1",
-          "status": "Free"
-        },
-        {
-          "id": 1,
-          "seat": "A - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 2,
-          "seat": "A - 3",
-          "status": "Free"
-        },
-        {
-          "id": 3,
-          "seat": "A - 4",
-          "status": "Free"
-        },
-        {
-          "id": 4,
-          "seat": "A - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 5,
-          "seat": "A - 6",
-          "status": "Occupied"
-        },
-        {
-          "id": 6,
-          "seat": "A - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 7,
-          "seat": "A - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 8,
-          "seat": "A - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 9,
-          "seat": "A - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 10,
-          "seat": "B - 1",
-          "status": "Free"
-        },
-        {
-          "id": 11,
-          "seat": "B - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 12,
-          "seat": "B - 3",
-          "status": "Free"
-        },
-        {
-          "id": 13,
-          "seat": "B - 4",
-          "status": "Free"
-        },
-        {
-          "id": 14,
-          "seat": "B - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 15,
-          "seat": "B - 6",
-          "status": "Free"
-        },
-        {
-          "id": 16,
-          "seat": "B - 7",
-          "status": "Free"
-        },
-        {
-          "id": 17,
-          "seat": "B - 8",
-          "status": "Free"
-        },
-        {
-          "id": 18,
-          "seat": "B - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 19,
-          "seat": "B - 10",
-          "status": "Free"
-        },
-        {
-          "id": 20,
-          "seat": "C - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 21,
-          "seat": "C - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 22,
-          "seat": "C - 3",
-          "status": "Free"
-        },
-        {
-          "id": 23,
-          "seat": "C - 4",
-          "status": "Free"
-        },
-        {
-          "id": 24,
-          "seat": "C - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 25,
-          "seat": "C - 6",
-          "status": "Free"
-        },
-        {
-          "id": 26,
-          "seat": "C - 7",
-          "status": "Free"
-        },
-        {
-          "id": 27,
-          "seat": "C - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 28,
-          "seat": "C - 9",
-          "status": "Free"
-        },
-        {
-          "id": 29,
-          "seat": "C - 10",
-          "status": "Free"
-        },
-        {
-          "id": 30,
-          "seat": "D - 1",
-          "status": "Free"
-        },
-        {
-          "id": 31,
-          "seat": "D - 2",
-          "status": "Free"
-        },
-        {
-          "id": 32,
-          "seat": "D - 3",
-          "status": "Free"
-        },
-        {
-          "id": 33,
-          "seat": "D - 4",
-          "status": "Free"
-        },
-        {
-          "id": 34,
-          "seat": "D - 5",
-          "status": "Free"
-        },
-        {
-          "id": 35,
-          "seat": "D - 6",
-          "status": "Free"
-        },
-        {
-          "id": 36,
-          "seat": "D - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 37,
-          "seat": "D - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 38,
-          "seat": "D - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 39,
-          "seat": "D - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 40,
-          "seat": "E - 1",
-          "status": "Free"
-        },
-        {
-          "id": 41,
-          "seat": "E - 2",
-          "status": "Free"
-        },
-        {
-          "id": 42,
-          "seat": "E - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 43,
-          "seat": "E - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 44,
-          "seat": "E - 5",
-          "status": "Free"
-        },
-        {
-          "id": 45,
-          "seat": "E - 6",
-          "status": "Occupied"
-        },
-        {
-          "id": 46,
-          "seat": "E - 7",
-          "status": "Free"
-        },
-        {
-          "id": 47,
-          "seat": "E - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 48,
-          "seat": "E - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 49,
-          "seat": "E - 10",
-          "status": "Free"
-        },
-        {
-          "id": 50,
-          "seat": "F - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 51,
-          "seat": "F - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 52,
-          "seat": "F - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 53,
-          "seat": "F - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 54,
-          "seat": "F - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 55,
-          "seat": "F - 6",
-          "status": "Free"
-        },
-        {
-          "id": 56,
-          "seat": "F - 7",
-          "status": "Free"
-        },
-        {
-          "id": 57,
-          "seat": "F - 8",
-          "status": "Free"
-        },
-        {
-          "id": 58,
-          "seat": "F - 9",
-          "status": "Free"
-        },
-        {
-          "id": 59,
-          "seat": "F - 10",
-          "status": "Free"
-        },
-        {
-          "id": 60,
-          "seat": "G - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 61,
-          "seat": "G - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 62,
-          "seat": "G - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 63,
-          "seat": "G - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 64,
-          "seat": "G - 5",
-          "status": "Free"
-        },
-        {
-          "id": 65,
-          "seat": "G - 6",
-          "status": "Free"
-        },
-        {
-          "id": 66,
-          "seat": "G - 7",
-          "status": "Free"
-        },
-        {
-          "id": 67,
-          "seat": "G - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 68,
-          "seat": "G - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 69,
-          "seat": "G - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 70,
-          "seat": "H - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 71,
-          "seat": "H - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 72,
-          "seat": "H - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 73,
-          "seat": "H - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 74,
-          "seat": "H - 5",
-          "status": "Free"
-        },
-        {
-          "id": 75,
-          "seat": "H - 6",
-          "status": "Free"
-        },
-        {
-          "id": 76,
-          "seat": "H - 7",
-          "status": "Free"
-        },
-        {
-          "id": 77,
-          "seat": "H - 8",
-          "status": "Free"
-        },
-        {
-          "id": 78,
-          "seat": "H - 9",
-          "status": "Free"
-        },
-        {
-          "id": 79,
-          "seat": "H - 10",
-          "status": "Free"
-        },
-        {
-          "id": 80,
-          "seat": "I - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 81,
-          "seat": "I - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 82,
-          "seat": "I - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 83,
-          "seat": "I - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 84,
-          "seat": "I - 5",
-          "status": "Free"
-        },
-        {
-          "id": 85,
-          "seat": "I - 6",
-          "status": "Occupied"
-        },
-        {
-          "id": 86,
-          "seat": "I - 7",
-          "status": "Free"
-        },
-        {
-          "id": 87,
-          "seat": "I - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 88,
-          "seat": "I - 9",
-          "status": "Free"
-        },
-        {
-          "id": 89,
-          "seat": "I - 10",
-          "status": "Free"
-        },
-        {
-          "id": 90,
-          "seat": "J - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 91,
-          "seat": "J - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 92,
-          "seat": "J - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 93,
-          "seat": "J - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 94,
-          "seat": "J - 5",
-          "status": "Free"
-        },
-        {
-          "id": 95,
-          "seat": "J - 6",
-          "status": "Free"
-        },
-        {
-          "id": 96,
-          "seat": "J - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 97,
-          "seat": "J - 8",
-          "status": "Free"
-        },
-        {
-          "id": 98,
-          "seat": "J - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 99,
-          "seat": "J - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 100,
-          "seat": "K - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 101,
-          "seat": "K - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 102,
-          "seat": "K - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 103,
-          "seat": "K - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 104,
-          "seat": "K - 5",
-          "status": "Free"
-        },
-        {
-          "id": 105,
-          "seat": "K - 6",
-          "status": "Occupied"
-        },
-        {
-          "id": 106,
-          "seat": "K - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 107,
-          "seat": "K - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 108,
-          "seat": "K - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 109,
-          "seat": "K - 10",
-          "status": "Occupied"
-        }
-      ]
-    },
-    {
-      "id": "1",
-      "title": "Spiderman 2",
-      "genre": "Action",
-      "duration": "2h 22min",
-      "description": "El fantastico hombre araña",
-      "image": "https://cdn1.epicgames.com/offer/b2818b59c0bb420e9647983dfd254931/EGS_Octopus_InsomniacGamesNixxesSoftware_S1_2560x1440-f27da78f484626718d1e22e7d6950ca5",
-      "sala": "2",
-      "trailer": "https://www.youtube.com/watch?v=ud80RFnSLG8&ab_channel=Tr%C3%A1ilersconDoblajeEspa%C3%B1olLatinobySoldierBoy",
-      "schedule": "2024-10-12 15:00:00",
-      "price": "25",
-      "seats": [
-        {
-          "id": 0,
-          "seat": "A - 1",
-          "status": "Free"
-        },
-        {
-          "id": 1,
-          "seat": "A - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 2,
-          "seat": "A - 3",
-          "status": "Free"
-        },
-        {
-          "id": 3,
-          "seat": "A - 4",
-          "status": "Free"
-        },
-        {
-          "id": 4,
-          "seat": "A - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 5,
-          "seat": "A - 6",
-          "status": "Occupied"
-        },
-        {
-          "id": 6,
-          "seat": "A - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 7,
-          "seat": "A - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 8,
-          "seat": "A - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 9,
-          "seat": "A - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 10,
-          "seat": "B - 1",
-          "status": "Free"
-        },
-        {
-          "id": 11,
-          "seat": "B - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 12,
-          "seat": "B - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 13,
-          "seat": "B - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 14,
-          "seat": "B - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 15,
-          "seat": "B - 6",
-          "status": "Free"
-        },
-        {
-          "id": 16,
-          "seat": "B - 7",
-          "status": "Free"
-        },
-        {
-          "id": 17,
-          "seat": "B - 8",
-          "status": "Free"
-        },
-        {
-          "id": 18,
-          "seat": "B - 9",
-          "status": "Free"
-        },
-        {
-          "id": 19,
-          "seat": "B - 10",
-          "status": "Free"
-        },
-        {
-          "id": 20,
-          "seat": "C - 1",
-          "status": "Free"
-        },
-        {
-          "id": 21,
-          "seat": "C - 2",
-          "status": "Free"
-        },
-        {
-          "id": 22,
-          "seat": "C - 3",
-          "status": "Free"
-        },
-        {
-          "id": 23,
-          "seat": "C - 4",
-          "status": "Free"
-        },
-        {
-          "id": 24,
-          "seat": "C - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 25,
-          "seat": "C - 6",
-          "status": "Free"
-        },
-        {
-          "id": 26,
-          "seat": "C - 7",
-          "status": "Free"
-        },
-        {
-          "id": 27,
-          "seat": "C - 8",
-          "status": "Free"
-        },
-        {
-          "id": 28,
-          "seat": "C - 9",
-          "status": "Free"
-        },
-        {
-          "id": 29,
-          "seat": "C - 10",
-          "status": "Free"
-        },
-        {
-          "id": 30,
-          "seat": "D - 1",
-          "status": "Free"
-        },
-        {
-          "id": 31,
-          "seat": "D - 2",
-          "status": "Free"
-        },
-        {
-          "id": 32,
-          "seat": "D - 3",
-          "status": "Free"
-        },
-        {
-          "id": 33,
-          "seat": "D - 4",
-          "status": "Free"
-        },
-        {
-          "id": 34,
-          "seat": "D - 5",
-          "status": "Free"
-        },
-        {
-          "id": 35,
-          "seat": "D - 6",
-          "status": "Free"
-        },
-        {
-          "id": 36,
-          "seat": "D - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 37,
-          "seat": "D - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 38,
-          "seat": "D - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 39,
-          "seat": "D - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 40,
-          "seat": "E - 1",
-          "status": "Free"
-        },
-        {
-          "id": 41,
-          "seat": "E - 2",
-          "status": "Free"
-        },
-        {
-          "id": 42,
-          "seat": "E - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 43,
-          "seat": "E - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 44,
-          "seat": "E - 5",
-          "status": "Free"
-        },
-        {
-          "id": 45,
-          "seat": "E - 6",
-          "status": "Free"
-        },
-        {
-          "id": 46,
-          "seat": "E - 7",
-          "status": "Free"
-        },
-        {
-          "id": 47,
-          "seat": "E - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 48,
-          "seat": "E - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 49,
-          "seat": "E - 10",
-          "status": "Free"
-        },
-        {
-          "id": 50,
-          "seat": "F - 1",
-          "status": "Free"
-        },
-        {
-          "id": 51,
-          "seat": "F - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 52,
-          "seat": "F - 3",
-          "status": "Free"
-        },
-        {
-          "id": 53,
-          "seat": "F - 4",
-          "status": "Free"
-        },
-        {
-          "id": 54,
-          "seat": "F - 5",
-          "status": "Occupied"
-        },
-        {
-          "id": 55,
-          "seat": "F - 6",
-          "status": "Free"
-        },
-        {
-          "id": 56,
-          "seat": "F - 7",
-          "status": "Free"
-        },
-        {
-          "id": 57,
-          "seat": "F - 8",
-          "status": "Free"
-        },
-        {
-          "id": 58,
-          "seat": "F - 9",
-          "status": "Free"
-        },
-        {
-          "id": 59,
-          "seat": "F - 10",
-          "status": "Free"
-        },
-        {
-          "id": 60,
-          "seat": "G - 1",
-          "status": "Free"
-        },
-        {
-          "id": 61,
-          "seat": "G - 2",
-          "status": "Free"
-        },
-        {
-          "id": 62,
-          "seat": "G - 3",
-          "status": "Occupied"
-        },
-        {
-          "id": 63,
-          "seat": "G - 4",
-          "status": "Free"
-        },
-        {
-          "id": 64,
-          "seat": "G - 5",
-          "status": "Free"
-        },
-        {
-          "id": 65,
-          "seat": "G - 6",
-          "status": "Free"
-        },
-        {
-          "id": 66,
-          "seat": "G - 7",
-          "status": "Free"
-        },
-        {
-          "id": 67,
-          "seat": "G - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 68,
-          "seat": "G - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 69,
-          "seat": "G - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 70,
-          "seat": "H - 1",
-          "status": "Free"
-        },
-        {
-          "id": 71,
-          "seat": "H - 2",
-          "status": "Free"
-        },
-        {
-          "id": 72,
-          "seat": "H - 3",
-          "status": "Free"
-        },
-        {
-          "id": 73,
-          "seat": "H - 4",
-          "status": "Free"
-        },
-        {
-          "id": 74,
-          "seat": "H - 5",
-          "status": "Free"
-        },
-        {
-          "id": 75,
-          "seat": "H - 6",
-          "status": "Free"
-        },
-        {
-          "id": 76,
-          "seat": "H - 7",
-          "status": "Free"
-        },
-        {
-          "id": 77,
-          "seat": "H - 8",
-          "status": "Free"
-        },
-        {
-          "id": 78,
-          "seat": "H - 9",
-          "status": "Free"
-        },
-        {
-          "id": 79,
-          "seat": "H - 10",
-          "status": "Free"
-        },
-        {
-          "id": 80,
-          "seat": "I - 1",
-          "status": "Free"
-        },
-        {
-          "id": 81,
-          "seat": "I - 2",
-          "status": "Free"
-        },
-        {
-          "id": 82,
-          "seat": "I - 3",
-          "status": "Free"
-        },
-        {
-          "id": 83,
-          "seat": "I - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 84,
-          "seat": "I - 5",
-          "status": "Free"
-        },
-        {
-          "id": 85,
-          "seat": "I - 6",
-          "status": "Occupied"
-        },
-        {
-          "id": 86,
-          "seat": "I - 7",
-          "status": "Free"
-        },
-        {
-          "id": 87,
-          "seat": "I - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 88,
-          "seat": "I - 9",
-          "status": "Free"
-        },
-        {
-          "id": 89,
-          "seat": "I - 10",
-          "status": "Free"
-        },
-        {
-          "id": 90,
-          "seat": "J - 1",
-          "status": "Free"
-        },
-        {
-          "id": 91,
-          "seat": "J - 2",
-          "status": "Free"
-        },
-        {
-          "id": 92,
-          "seat": "J - 3",
-          "status": "Free"
-        },
-        {
-          "id": 93,
-          "seat": "J - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 94,
-          "seat": "J - 5",
-          "status": "Free"
-        },
-        {
-          "id": 95,
-          "seat": "J - 6",
-          "status": "Free"
-        },
-        {
-          "id": 96,
-          "seat": "J - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 97,
-          "seat": "J - 8",
-          "status": "Free"
-        },
-        {
-          "id": 98,
-          "seat": "J - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 99,
-          "seat": "J - 10",
-          "status": "Occupied"
-        },
-        {
-          "id": 100,
-          "seat": "K - 1",
-          "status": "Occupied"
-        },
-        {
-          "id": 101,
-          "seat": "K - 2",
-          "status": "Occupied"
-        },
-        {
-          "id": 102,
-          "seat": "K - 3",
-          "status": "Free"
-        },
-        {
-          "id": 103,
-          "seat": "K - 4",
-          "status": "Occupied"
-        },
-        {
-          "id": 104,
-          "seat": "K - 5",
-          "status": "Free"
-        },
-        {
-          "id": 105,
-          "seat": "K - 6",
-          "status": "Free"
-        },
-        {
-          "id": 106,
-          "seat": "K - 7",
-          "status": "Occupied"
-        },
-        {
-          "id": 107,
-          "seat": "K - 8",
-          "status": "Occupied"
-        },
-        {
-          "id": 108,
-          "seat": "K - 9",
-          "status": "Occupied"
-        },
-        {
-          "id": 109,
-          "seat": "K - 10",
-          "status": "Occupied"
-        }
-      ]
-    },
-    {
       "id": "2",
-      "title": "Spiderman 2",
-      "genre": "Action",
-      "duration": "2h 22min",
-      "description": "El fantastico hombre araña",
-      "image": "https://cdn1.epicgames.com/offer/b2818b59c0bb420e9647983dfd254931/EGS_Octopus_InsomniacGamesNixxesSoftware_S1_2560x1440-f27da78f484626718d1e22e7d6950ca5",
-      "sala": "2",
-      "trailer": "https://www.youtube.com/watch?v=ud80RFnSLG8&ab_channel=Tr%C3%A1ilersconDoblajeEspa%C3%B1olLatinobySoldierBoy",
-      "schedule": "2024-10-12 15:00:00",
-      "price": "25"
+      "title": "Señor de los anillos",
+      "description": "Peli para gente friki",
+      "image": "https://www.phenomena-experience.com/galeria/Abril_2018/826x465-imagen-evento-lotr.jpg",
+      "schedule": "03-26-2025 16:00",
+      "price": 20,
+      "sala": 2,
+      "genero": "Ficcion",
+      "seats": [
+        {
+          "id": 0,
+          "seat": "A - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 1,
+          "seat": "A - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 2,
+          "seat": "A - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 3,
+          "seat": "A - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 4,
+          "seat": "A - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 5,
+          "seat": "A - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 6,
+          "seat": "A - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 7,
+          "seat": "A - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 8,
+          "seat": "A - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 9,
+          "seat": "A - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 10,
+          "seat": "B - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 11,
+          "seat": "B - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 12,
+          "seat": "B - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 13,
+          "seat": "B - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 14,
+          "seat": "B - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 15,
+          "seat": "B - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 16,
+          "seat": "B - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 17,
+          "seat": "B - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 18,
+          "seat": "B - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 19,
+          "seat": "B - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 20,
+          "seat": "C - 1",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 21,
+          "seat": "C - 2",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 22,
+          "seat": "C - 3",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 23,
+          "seat": "C - 4",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 24,
+          "seat": "C - 5",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 25,
+          "seat": "C - 6",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 26,
+          "seat": "C - 7",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 27,
+          "seat": "C - 8",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 28,
+          "seat": "C - 9",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 29,
+          "seat": "C - 10",
+          "status": "Occupied",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 30,
+          "seat": "D - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 31,
+          "seat": "D - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 32,
+          "seat": "D - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 33,
+          "seat": "D - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 34,
+          "seat": "D - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 35,
+          "seat": "D - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 36,
+          "seat": "D - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 37,
+          "seat": "D - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 38,
+          "seat": "D - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 39,
+          "seat": "D - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 40,
+          "seat": "E - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 41,
+          "seat": "E - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 42,
+          "seat": "E - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 43,
+          "seat": "E - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 44,
+          "seat": "E - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 45,
+          "seat": "E - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 46,
+          "seat": "E - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 47,
+          "seat": "E - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 48,
+          "seat": "E - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 49,
+          "seat": "E - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 50,
+          "seat": "F - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 51,
+          "seat": "F - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 52,
+          "seat": "F - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 53,
+          "seat": "F - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 54,
+          "seat": "F - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 55,
+          "seat": "F - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 56,
+          "seat": "F - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 57,
+          "seat": "F - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 58,
+          "seat": "F - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 59,
+          "seat": "F - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 60,
+          "seat": "G - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 61,
+          "seat": "G - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 62,
+          "seat": "G - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 63,
+          "seat": "G - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 64,
+          "seat": "G - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 65,
+          "seat": "G - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 66,
+          "seat": "G - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 67,
+          "seat": "G - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 68,
+          "seat": "G - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 69,
+          "seat": "G - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 70,
+          "seat": "H - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 71,
+          "seat": "H - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 72,
+          "seat": "H - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 73,
+          "seat": "H - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 74,
+          "seat": "H - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 75,
+          "seat": "H - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 76,
+          "seat": "H - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 77,
+          "seat": "H - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 78,
+          "seat": "H - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 79,
+          "seat": "H - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 80,
+          "seat": "I - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 81,
+          "seat": "I - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 82,
+          "seat": "I - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 83,
+          "seat": "I - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 84,
+          "seat": "I - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 85,
+          "seat": "I - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 86,
+          "seat": "I - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 87,
+          "seat": "I - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 88,
+          "seat": "I - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 89,
+          "seat": "I - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 90,
+          "seat": "J - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 91,
+          "seat": "J - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 92,
+          "seat": "J - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 93,
+          "seat": "J - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 94,
+          "seat": "J - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 95,
+          "seat": "J - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 96,
+          "seat": "J - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 97,
+          "seat": "J - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 98,
+          "seat": "J - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 99,
+          "seat": "J - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 100,
+          "seat": "K - 1",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 101,
+          "seat": "K - 2",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 102,
+          "seat": "K - 3",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 103,
+          "seat": "K - 4",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 104,
+          "seat": "K - 5",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 105,
+          "seat": "K - 6",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 106,
+          "seat": "K - 7",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 107,
+          "seat": "K - 8",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 108,
+          "seat": "K - 9",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        },
+        {
+          "id": 109,
+          "seat": "K - 10",
+          "status": "Free",
+          "movie": "Señor de los anillos"
+        }
+      ]
     }
   ]
 }
